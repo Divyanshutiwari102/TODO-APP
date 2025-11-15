@@ -1,7 +1,7 @@
-📝 Full Stack Todo Application
+Full Stack Todo Application
 This project is a fully functional, secure Todo List application built using the specified modern TypeScript stack for both the frontend and backend.
 
-✨ Project Highlights
+Project Highlights
 Secure Authentication: User management via JWT tokens (Sign-up, Sign-in, Forgot/Reset Password).
 
 Persistent Storage: Data logged and stored securely on MongoDB Atlas.
@@ -10,7 +10,7 @@ Modern Frontend: Uses React Query for data fetching, Zod for validation, and Zus
 
 Robust Backend: Features dedicated error handling that logs all server errors to a separate MongoDB collection.
 
-💻 Tech Stack
+ Tech Stack
 Frontend Requirements (React with TypeScript Only)
 Framework: React
 
@@ -35,7 +35,7 @@ Authentication: JWT (JSON Web Tokens)
 
 Data Validation: Basic validation integrated into controllers.
 
-⚙️ Installation and Setup
+ Installation and Setup
 Prerequisites
 Node.js: Installed on your machine.
 
