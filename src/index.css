@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+html {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+/* Custom Scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #388ae2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f74c0;
+}
+/* Placeholder to fix the import error */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+html {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* Use the new background image from the public folder */
+  background-image: url("/public/bg-abstract.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* ... (Add more styles from the earlier comprehensive CSS provided) ... */

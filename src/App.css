@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/* Global App Container */
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Ensure App container fills viewport to push footer down */
+  position: relative;
+  /* Removed padding-bottom since footer will be absolute/fixed */
+  padding-bottom: 0; 
+  background-image: url("/public/bg-abstract.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 40px 0 20px 0;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+
+/* --- Auth Pages & Form Styling --- */
+
+.auth-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.auth-container h2 {
+    color: #2f74c0;
+    margin-bottom: 25px;
+}
+
+.auth-container input {
+    width: 90%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.auth-container input:focus {
+    border-color: #388ae2;
+    outline: none;
+}
+
+.auth-container button {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2f74c0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+.auth-container button:hover:not(:disabled) {
+    background-color: #388ae2;
+}
+
+.auth-container button:active {
+    transform: scale(0.99);
+}
+
+.auth-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+/* --- Header & Logout Button --- */
+
+.header-container {
+  /* FIXED: Added max-width for consistency, fixed the typo (px) */
+  width: 95%;
+  max-width: 1100px; 
+  display: flex;
+  justify-content: flex-end;
+  /* FIXED: Adjusted margin to position logout button correctly */
+  margin-top: -35px; /* Adjust based on App.tsx component flow */
+  margin-bottom: 20px; 
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+/* --- Footer Styling (Fixed to Bottom) --- */
+.app-footer {
+  /* FIXED: Use absolute positioning relative to .App to stick to the bottom */
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  color: #bbb;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 13px;
+  z-index: 100;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  /* margin-top: auto is no longer needed with position: absolute */
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 800px) {
+  .heading {
+    margin: 25px 0;
+    font-size: 38px;
+  }
+}

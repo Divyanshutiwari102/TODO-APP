@@ -1,0 +1,25 @@
+# Dependencies
+/node_modules
+/server/node_modules
+/dist
+/build
+
+# Environment Variables (CRITICAL FOR SECURITY)
+.env
+/server/.env
+.env.local
+
+# Logs and Lockfiles
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+/server/package-lock.json
+/server/yarn.lock
+
+# TypeScript caches
+*.tsbuildinfo
+
+# IDE/OS files
+.vscode/
+.idea/
+.DS_Store
